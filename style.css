@@ -13,8 +13,24 @@
     background-color: rgb(51, 120, 169);
     margin: 0 auto;
     margin-top: 50px;
+    position: relative;
 }
-.top{
+.time{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+.bang{
+    position: absolute;
+    top: 0;
+    width: 180px;
+    height: 27px;
+    background-color: #000;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0px 0px 10px 10px;
+}
+.top__body{
     text-align: center;
     padding-top: 70px;
 }
@@ -22,14 +38,39 @@
     display: flex;
     justify-content: space-around;
 }
+.top__icons{
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    
+}
 .icon{
     width: 150px;
     height: 150px;
     background-color: rgb(43, 134, 246);
 }
 .city{
+    width: 215px;
+    height: 34px;
+    padding: 5px;
     font-size: 34px;
+    text-align: center;
+    line-height: 24px;
+    color: #fff;  
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
 }
+.city::placeholder {  
+    font-size: 20px;
+    color: #fff;
+    opacity: .6;
+}
+
 .temerature{
     padding: 20px 0px;
     font-size: 40px;

@@ -10,11 +10,24 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="top">
+        <time class="time"></time>
+        <div class="bang"></div>
+        <ul class="top__icons">
+            <li class="top__icons-item">
+                <img src="./img/top-icons/Connection.png" alt="Connection">
+            </li>
+            <li class="top__icons-item">
+                <img src="./img/top-icons/Wifi.png" alt="Wifi">
+            </li>
+            <li class="top__icons-item">
+                <img src="./img/top-icons/Battery.png" alt="Battery">
+            </li>
+        </ul>
+        <div class="top__body">
             <div class="top__block">
                 <div class="icon"></div>
                 <div class="top__weather">
-                    <div class="city">Moscow</div>
+                    <input type="text" class="city" placeholder="Moscow"/>
                     <div class="temerature">20&deg</div>
                     <div class="weather-description">Sunny</div>
                 </div>
@@ -29,5 +42,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
