@@ -28,16 +28,40 @@
                 <div class="icon"></div>
                 <div class="top__weather">
                     <input type="text" class="city" placeholder="Moscow"/>
-                    <div class="temerature">20&deg</div>
-                    <div class="weather-description">Sunny</div>
+                    <div class="temerature"></div>
+                    <div class="weather-description"></div>
                 </div>
             </div>
             <div class="weather__info">
                 <ul class="weather__items">
-                    <li class="weather__item wind_speed">speed</li>
-                    <li class="weather__item precip">precip(осадки)</li>
-                    <li class="weather__item pressure">pressure(=давление)</li>
-                    <li class="weather__item humidity">humidity(влажность)</li>
+                    <li class="weather__item">
+                        <img class="weather__icon" src="./img/weather-icon/wind.svg" alt="wind">
+                        <div class="weather__item--wrapper">
+                            <div class="wind_speed"></div>
+                            <div class="descr">Wind</div>
+                        </div>
+                    </li>
+                    <li class="weather__item">
+                        <img class="weather__icon" src="./img/weather-icon/rain.svg" alt="wind">
+                        <div class="weather__item--wrapper">
+                            <div class="precip"></div>
+                            <div class="descr">Chance of rain</div>
+                        </div>
+                    </li>
+                    <li class="weather__item">
+                        <img class="weather__icon" src="./img/weather-icon/pressure.svg" alt="wind">
+                        <div class="weather__item--wrapper">
+                            <div class="pressure"></div>
+                            <div class="descr">Pressure</div>
+                        </div>
+                    </li>
+                    <li class="weather__item">
+                        <img class="weather__icon" src="./img/weather-icon/humidity.svg" alt="wind">
+                        <div class="weather__item--wrapper">
+                            <div class="humidity"></div>
+                            <div class="descr">Humidity</div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>

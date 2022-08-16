@@ -81,6 +81,9 @@
 .weather__info{
     padding-top: 60px;
 }
+.weather__icon{
+    width: 50px;
+}
 .weather__items{
     display: flex;
     justify-content: space-around;
@@ -88,5 +91,14 @@
     gap: 40px;
 }
 .weather__item{
-    background-color: rgb(9, 38, 103);
+    display: flex;
+}
+.weather__item--wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.descr{
+    padding-top: 5px;
+    font-size: 18px;
 }

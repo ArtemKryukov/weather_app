@@ -18,11 +18,17 @@ const showTime = () => {
 showTime()
 // 9c9f8f988a91214b3c811e5c88d080a9
 async function getWeather() {  
-    const url = `http://api.weatherstack.com/current?access_key=9c9f8f988a91214b3c811e5c88d080a9&query=${city.value}`
+    const url = `http://api.weatherstack.com/forecast?access_key=9c9f8f988a91214b3c811e5c88d080a9&query=${city.value}`
     const res = await fetch(url)
-    const data = await res.json() 
-    console.log(data)
+    const data = await res.json()
+
+    temerature.innerHTML = data.current.temperature
+    weatherDescription.innerHTML = data.current.weather_descriptions
+    windSpeed.innerHTML = `${Math.floor(data.current.wind_speed)} m/s`
+    precip.innerHTML = data.current.precip
+    pressure.innerHTML = `${data.current.pressure} mbar`
+    humidity.innerHTML = `${data.current.humidity}%`
 }
-getWeather()
+
 city.addEventListener('change', getWeather)
 
