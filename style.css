@@ -82,7 +82,8 @@
     padding-top: 60px;
 }
 .weather__icon{
-    width: 50px;
+    width: 35px;
+    height: 35px;
 }
 .weather__items{
     display: flex;
@@ -92,6 +93,8 @@
 }
 .weather__item{
     display: flex;
+    width: 140px;
+    height: 70px;
 }
 .weather__item--wrapper{
     display: flex;
